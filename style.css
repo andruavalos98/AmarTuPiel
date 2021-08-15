@@ -66,7 +66,11 @@ header {
     transition: 0.3s;
 }
 
+
+/* Formulario */
+
 .content {
+    height: 100%;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +112,14 @@ label {
     color: white;
 }
 
+#turnos:before {
+    display: block;
+    content: "";
+    height: 17vh;
+    margin-top: -17vh;
+    visibility: hidden;
+}
+
 
 /* PARA CELU */
 
@@ -145,6 +157,10 @@ label {
         padding: 10px;
         text-align: center;
     }
+    .item:hover {
+        background: #e84393;
+        border-bottom: none;
+    }
     .menu li {
         border-top: 1px solid white;
     }
@@ -158,6 +174,7 @@ label {
     .formulario-turnos form {
         margin: 0;
         padding: 1em;
+        height: 100%;
     }
     .formulario-turnos form button,
     .formulario-turnos form input {
@@ -180,6 +197,7 @@ label {
         background: rgba(255, 255, 255, 0.5);
         color: black;
         margin: 10px;
+        height: 100%;
         border-radius: 1%;
     }
     section h1 {
@@ -208,6 +226,12 @@ label {
         justify-content: center;
         align-items: center;
     }
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .dermaplaning img {
         max-width: 50vw;
         margin: 20px;
@@ -217,6 +241,21 @@ label {
         margin: 20px;
     }
     .microdermo p {
+        margin: 10px;
+    }
+    /* seccion contacto */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact img {
+        width: 70%;
+        margin: 20px;
+        padding: 10px;
+    }
+    .contact i {
         margin: 10px;
     }
 }
@@ -315,5 +354,32 @@ label {
         background: #e84393;
         color: white;
         transition: background-color .4s ease-out;
+    }
+    /* seccion quien soy */
+    .quien-soy {
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        width: 80vw;
+        margin: auto;
+        height: 80vh;
+        border-radius: 1%;
+    }
+    section h1 {
+        margin: 0;
+    }
+    .foto-txt {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .foto {
+        align-items: center;
+        margin: 15px;
+        max-width: 41%;
+        border-radius: 20px;
+    }
+    .txt {
+        padding: 20px;
+        font-size: 20px;
     }
 }
