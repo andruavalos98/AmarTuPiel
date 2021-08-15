@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkeo de css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title>Amar tu piel</title>
+</head>
+
+<body>
+    <header>
+        <img src="iconos/logo.jpeg" alt="" class="logo-nav">
+        <h1 class="titulo">Amar Tu Piel</h1>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="btn-menu"><i class="fas fa-bars"></i></label>
+
+        <nav class="menu">
+            <ul class="nav-items">
+                <li class="li"><a href="" class="item">Inicio</a></li>
+                <li><a href="" class="item">Turnos</a></li>
+                <li><a href="" class="item">¿Quien soy?</a></li>
+                <li><a href="" class="item">Servicios</a></li>
+                <li><a href="" class="item">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="conteiner">
+                <p class="flex-p">
+                    Martinuchis Limpieza
+                </p>
+            </div>
+        </section>
+        <section class="content">
+            <h1 class="log">Turnos</h1>
+            <div class="contact-wrapper">
+                <div class="formulario-turnos">
+                    <h3>Solicita tu turno!</h3>
+                    <form>
+                        <p>
+                            <label for="">Nombre</label>
+                            <input type="text" name="nombre">
+                        </p>
+                        <p>
+                            <label for="">Apellido</label>
+                            <input type="text" name="apellido">
+                        </p>
+                        <p>
+                            <label for="">Celular</label>
+                            <input type="tel" name="celular">
+                        </p>
+                        <p>
+                            <label for="">Correo</label>
+                            <input type="email" name="correo">
+                        </p>
+                        <p>
+                            <label for="" class="block">Fecha y hora</label>
+                            <input type="datetime-local" name="fechayhora">
+                        </p>
+                        <button type="submit" class="block">
+                            Solicitar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="contact">Contactame!</p>
+        <a href="https://www.instagram.com/_amartupiel/" class="iconos"><i class="fab fa-instagram redes"></i></a>
+        <a href="" class="iconos"><i class="fab fa-whatsapp redes"></i></a>
+    </footer>
+</body>
+
+</html>

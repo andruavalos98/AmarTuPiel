@@ -1,0 +1,160 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://www.esteticavictoria.es/wp-content/uploads/2020/09/centro-estetica-avanzado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: brightness(50%);
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70vw;
+    margin: auto;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    border-radius: 15px;
+}
+
+.footer {
+    background: #ffa9c8c2;
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-p {
+    width: 100vw;
+    color: white;
+    text-align: center;
+}
+
+.redes {
+    font-size: 2rem;
+    padding: 7px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.item {
+    text-decoration: none;
+    color: b;
+}
+
+
+/* PARA CELU */
+
+@media (min-width:320px) {
+    .logo-nav {
+        display: none;
+    }
+    .titulo {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+        background: #ffa9c9;
+        font-size: 25px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .menu {
+        position: absolute;
+        background: #ffa9c9;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .item {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu li {
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked~.menu {
+        margin: 0;
+    }
+}
+
+
+/* PARA ESCRITORIO */
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+    .btn-menu {
+        display: none;
+        width: 30px;
+        height: 3px;
+        padding: 10px;
+    }
+    .btn-menu:hover {
+        cursor: pointer;
+    }
+    .menu {
+        align-items: center;
+        background: transparent;
+        margin: 0;
+    }
+    .menu li {
+        border-top: none;
+        list-style: none;
+        font-size: 1.15rem;
+        display: flex;
+        align-items: center;
+        /* esto hace que se levante uno por uno */
+        width: auto;
+    }
+    .nav-items {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .item:hover {
+        border-bottom: 5px solid #e84393;
+        transition: 0.3s;
+    }
+    .item {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+    }
+    .logo-nav {
+        display: inline;
+        width: 4rem;
+        padding: 9px;
+        border-radius: 50%;
+    }
+    .titulo {
+        display: inline;
+        color: white;
+    }
+}
