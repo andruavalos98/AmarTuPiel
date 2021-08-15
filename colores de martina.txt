@@ -1,0 +1,3 @@
+proyecto martina
+color rosa oscuro: #e84393
+rosa claro: #ffa9c8c2

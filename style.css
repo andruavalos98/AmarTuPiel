@@ -8,6 +8,11 @@ body {
     backdrop-filter: brightness(50%);
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 .conteiner {
     display: flex;
     flex-direction: row;
@@ -55,10 +60,37 @@ body {
     color: b;
 }
 
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.formulario-turnos form button,
+.formulario-turnos form input {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ffa9c9;
+    color: white;
+    outline: none;
+}
+
+label {
+    color: white;
+}
+
 
 /* PARA CELU */
 
-@media (min-width:320px) {
+@media (min-width: 320px) {
     .logo-nav {
         display: none;
     }
@@ -98,63 +130,89 @@ body {
     #btn-menu:checked~.menu {
         margin: 0;
     }
-}
-
-
-/* PARA ESCRITORIO */
-
-@media (min-width: 768px) {
-    header {
-        display: flex;
-        align-items: center;
+    /* Edicion del formulario para sacar turnos */
+    .contact-wrapper>* {
+        padding: 1em;
     }
-    .btn-menu {
-        display: none;
-        width: 30px;
-        height: 3px;
-        padding: 10px;
-    }
-    .btn-menu:hover {
-        cursor: pointer;
-    }
-    .menu {
-        align-items: center;
-        background: transparent;
+    .formulario-turnos form {
         margin: 0;
+        padding: 1em;
     }
-    .menu li {
-        border-top: none;
-        list-style: none;
-        font-size: 1.15rem;
-        display: flex;
-        align-items: center;
-        /* esto hace que se levante uno por uno */
-        width: auto;
-    }
-    .nav-items {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .item:hover {
-        border-bottom: 5px solid #e84393;
-        transition: 0.3s;
-    }
-    .item {
-        display: block;
-        padding: 15px 20px;
+    .formulario-turnos form button,
+    .formulario-turnos form input {
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #ffa9c9;
         color: white;
     }
-    .logo-nav {
-        display: inline;
-        width: 4rem;
-        padding: 9px;
-        border-radius: 50%;
+    .formulario-turnos form button {
+        background: #ffa9c9;
+        border: 0;
+        text-transform: uppercase;
+        color: black;
+        padding: 1em;
     }
-    .titulo {
-        display: inline;
-        color: white;
+    /* .formulario-turnos form input:focus {
+        border-bottom: 7px solid orangered;
+        transition: 1s 
+    }
+} */
+    /* PARA ESCRITORIO */
+    @media (min-width: 768px) {
+        header {
+            display: flex;
+            align-items: center;
+        }
+        .btn-menu {
+            display: none;
+            width: 30px;
+            height: 3px;
+            padding: 10px;
+        }
+        .btn-menu:hover {
+            cursor: pointer;
+        }
+        .menu {
+            align-items: center;
+            background: transparent;
+            margin: 0;
+        }
+        .menu li {
+            border-top: none;
+            list-style: none;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            /* esto hace que se levante uno por uno */
+            width: auto;
+        }
+        .nav-items {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .item:hover {
+            border-bottom: 5px solid #e84393;
+            transition: 0.3s;
+        }
+        .item {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+        }
+        .logo-nav {
+            display: inline;
+            width: 4rem;
+            padding: 9px;
+            border-radius: 50%;
+        }
+        .titulo {
+            display: inline;
+            color: white;
+        }
     }
 }
