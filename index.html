@@ -13,13 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet" />
     <!-- iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="iconos/logo.jpeg" type="image/x-icon">
     <!-- normalize -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <title>Amar tu piel</title>
 </head>
 
 <body>
-    <header>
+    <header class="abajo">
         <img src="iconos/logo.jpeg" alt="" class="logo-nav" />
         <h1 class="titulo">Amar Tu Piel</h1>
         <input type="checkbox" id="btn-menu" />
@@ -29,13 +30,13 @@
             <ul class="nav-items">
                 <li class="li"><a href="" class="item">Inicio</a></li>
                 <li><a href="#turnos" class="item">Turnos</a></li>
-                <li><a href="" class="item">¿Quien soy?</a></li>
-                <li><a href="" class="item">Servicios</a></li>
-                <li><a href="" class="item">Contacto</a></li>
+                <li><a href="#quien-soy" class="item">¿Quien soy?</a></li>
+                <li><a href="#serv" class="item">Servicios</a></li>
+                <li><a href="#contact" class="item">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main class="zona">
+    <main>
         <section>
             <div class="conteiner">
                 <p class="flex-p">Martinuchis Limpieza</p>
@@ -72,7 +73,8 @@
                 </div>
             </div>
         </section>
-
+        <!-- no se como se hace, esto esta mal -->
+        <p id="quien-soy" style="font-size: 40px; visibility: hidden;">invisible</p>
         <section class="quien-soy">
             <h1>¿Quien soy?</h1>
             <div class="foto-txt">
@@ -83,10 +85,10 @@
             </div>
         </section>
 
-        <section class="servicios">
+        <section class="servicios" id="serv">
             <h1>Servicios</h1>
 
-            <article class="dermaplaning flex column jus-cen al-cen">
+            <article class="dermaplaning ">
                 <img src="iconos/Dermaplaning.jpg" class="img" alt="" />
                 <div>
                     <h1>Dermaplaning</h1>
@@ -98,7 +100,7 @@
                 </div>
             </article>
 
-            <article class="microdermo flex row jus-cen al-cen">
+            <article class="microdermo ">
                 <img src="iconos/Microdermo.jpg" class="img" alt="" />
                 <div>
                     <h1>Microdermoabrasión</h1>
@@ -109,7 +111,7 @@
             </article>
         </section>
 
-        <section>
+        <section id="contact">
             <h1>Contacto</h1>
             <div class="contact">
                 <p><i class="fas fa-map-marker-alt"></i>Mi consultorio</p>

@@ -1,187 +1,92 @@
-body {
-    font-family: "Poppins", sans-serif;
-    background-image: url(https://www.esteticavictoria.es/wp-content/uploads/2020/09/centro-estetica-avanzado.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    backdrop-filter: brightness(50%);
-    color: white;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    transition: 0.7s;
-}
-
-header.abajo {
-    background: #858585;
-    /* padding: 15px 20px; */
-}
-
-.conteiner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 70vw;
-    margin: auto;
-    font-size: 1.5rem;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-    border-radius: 15px;
-}
-
-.footer {
-    background: #ffa9c8c2;
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-p {
-    width: 100vw;
-    color: white;
-    text-align: center;
-}
-
-.redes {
-    font-size: 2rem;
-    padding: 7px;
-}
-
-#btn-menu {
-    display: none;
-}
-
-.nav-items {
-    list-style: none;
-}
-
-.item {
-    text-decoration: none;
-    color: b;
-}
-
-.item:hover {
-    border-bottom: 5px solid #e84393;
-    transition: 0.3s;
-}
-
-
-/* Formulario */
-
-.content {
-    height: 100%;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-    color: white;
-}
-
-.logo {
-    text-align: center;
-    font-size: 3em;
-}
-
-.formulario-turnos form button,
-.formulario-turnos form input {
-    width: 100%;
-    padding: 0.7em;
-    border: none;
-    background: none;
-    border-bottom: 1px solid #ffa9c9;
-    color: white;
-    outline: none;
-}
-
-.formulario-turnos form button {
-    background: #ffa9c9;
-    border: 0;
-    text-transform: uppercase;
-    color: black;
-    padding: 1em;
-}
-
-.formulario-turnos form button:hover {
-    background: #e84393;
-    color: white;
-    transition: background-color 0.4s ease-out;
-}
-
-label {
-    color: white;
-}
-
-#turnos:before {
-    display: block;
-    content: "";
-    height: 17vh;
-    margin-top: -17vh;
-    visibility: hidden;
-}
-
-
-/* PARA CELU */
-
-@media (min-width: 320px) {
-    .logo-nav {
-        display: none;
-    }
-    .titulo {
-        display: none;
-    }
-    .btn-menu {
-        display: block;
-        background: #ffa9c9;
-        font-size: 25px;
-        padding: 10px;
-        cursor: pointer;
-    }
-    .menu {
-        position: absolute;
-        background: #ffa9c9;
-        width: 100%;
-        margin-left: -100%;
-        transition: all 0.5s;
-    }
-    .nav-items {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-    }
-    .item {
-        display: flex;
-        justify-content: center;
+    body {
+        font-family: "Poppins", sans-serif;
+        background-image: url(https://www.esteticavictoria.es/wp-content/uploads/2020/09/centro-estetica-avanzado.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: brightness(50%);
         color: white;
-        padding: 10px;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        transition: 0.7s;
+    }
+    
+    header.abajo {
+        background: black;
+        height: 50px;
+    }
+    
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70vw;
+        margin: auto;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+        flex: 1 0 auto;
+        border-radius: 15px;
+    }
+    
+    .footer {
+        background: #ffa9c8c2;
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-p {
+        width: 100vw;
+        color: white;
         text-align: center;
     }
+    
+    .redes {
+        font-size: 2rem;
+        padding: 7px;
+    }
+    
+    #btn-menu {
+        display: none;
+    }
+    
+    .nav-items {
+        list-style: none;
+    }
+    
+    .item {
+        text-decoration: none;
+        color: b;
+    }
+    
     .item:hover {
-        background: #e84393;
-        border-bottom: none;
+        border-bottom: 5px solid #e84393;
+        transition: 0.3s;
     }
-    .menu li {
-        border-top: 1px solid white;
-    }
-    #btn-menu:checked~.menu {
-        margin: 0;
-    }
-    /* Edicion del formulario para sacar turnos */
-    .contact-wrapper>* {
-        padding: 1em;
-    }
-    .formulario-turnos form {
-        margin: 0;
-        padding: 1em;
+    /* Formulario */
+    
+    .content {
         height: 100%;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+        color: white;
     }
+    
+    .logo {
+        text-align: center;
+        font-size: 3em;
+    }
+    
     .formulario-turnos form button,
     .formulario-turnos form input {
         width: 100%;
@@ -190,7 +95,9 @@ label {
         background: none;
         border-bottom: 1px solid #ffa9c9;
         color: white;
+        outline: none;
     }
+    
     .formulario-turnos form button {
         background: #ffa9c9;
         border: 0;
@@ -198,145 +105,95 @@ label {
         color: black;
         padding: 1em;
     }
-    /* seccion quien soy */
-    .quien-soy {
-        background: rgba(255, 255, 255, 0.5);
-        color: black;
-        margin: 10px;
-        height: 100%;
-        border-radius: 1%;
+    
+    .formulario-turnos form button:hover {
+        background: #e84393;
+        color: white;
+        transition: background-color 0.4s ease-out;
     }
-    section h1 {
-        text-align: center;
-        align-items: center;
-        flex-wrap: wrap;
+    
+    label {
+        color: white;
     }
-    .foto-txt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
+    #turnos:before {
+        display: block;
+        content: "";
+        height: 17vh;
+        margin-top: -17vh;
+        visibility: hidden;
     }
-    .foto {
-        max-width: 80vw;
+    
+    #serv:before {
+        /* display: block; */
+        content: "";
+        height: 34vh;
+        margin-top: -30vh;
+        visibility: hidden;
     }
-    .txt {
-        padding: 20px;
-        font-size: 20px;
+    
+    #contact:before {
+        display: block;
+        content: "";
+        height: 5vh;
+        margin-top: -10vh;
+        visibility: hidden;
     }
-    /* seccion servicios */
-    .servicios {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-        margin: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    .descripcion {
-        min-width: 300px;
-    }
-    .dermaplaning img {
-        max-width: 50vw;
-        margin: 20px;
-    }
-    .microdermo img {
-        max-width: 50vw;
-        margin: 20px;
-    }
-    .microdermo h1 {
-        font-size: 30px;
-    }
-    .microdermo p {
-        margin: 10px;
-    }
-    /* seccion contacto */
-    .contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact img {
-        width: 70%;
-        margin: 20px;
-        padding: 10px;
-    }
-    .contact i {
-        margin: 10px;
-    }
-    /* PARA ESCRITORIO */
-    @media (min-width: 1025px) {
-        header {
-            display: flex;
-            align-items: center;
+    /* PARA CELU */
+    
+    @media (min-width: 320px) {
+        .logo-nav {
+            display: none;
+        }
+        .titulo {
+            display: none;
         }
         .btn-menu {
-            display: none;
-            width: 30px;
-            height: 3px;
+            display: block;
+            background: #ffa9c9;
+            font-size: 25px;
             padding: 10px;
-        }
-        .btn-menu:hover {
             cursor: pointer;
         }
         .menu {
-            align-items: center;
-            background: transparent;
-            margin: 0;
-        }
-        .menu li {
-            border-top: none;
-            list-style: none;
-            font-size: 1.15rem;
-            display: flex;
-            align-items: center;
-            /* esto hace que se levante uno por uno */
-            width: auto;
+            position: absolute;
+            background: #ffa9c9;
+            width: 100%;
+            margin-left: -100%;
+            transition: all 0.5s;
         }
         .nav-items {
-            margin: 0;
-            padding: 0;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-        .item:hover {
-            background: none;
-            border-bottom: 5px solid #e84393;
-            transition: 0.3s;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
         }
         .item {
-            display: block;
-            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
             color: white;
+            padding: 10px;
+            text-align: center;
         }
-        .logo-nav {
-            display: inline;
-            width: 4rem;
-            padding: 9px;
-            border-radius: 50%;
+        .item:hover {
+            background: #e84393;
+            border-bottom: none;
         }
-        .titulo {
-            display: inline;
-            color: white;
+        .menu li {
+            border-top: 1px solid white;
         }
+        #btn-menu:checked~.menu {
+            margin: 0;
+        }
+        /* Edicion del formulario para sacar turnos */
         .contact-wrapper>* {
             padding: 1em;
         }
         .formulario-turnos form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        /* hace que el input de fecha y hora y el boton ocupen todo */
-        .formulario-turnos form .block {
-            grid-column: 1 / 3;
-        }
-        .formulario-turnos form p {
             margin: 0;
             padding: 1em;
+            height: 100%;
         }
-        /* edicion del boton y los inputs */
         .formulario-turnos form button,
         .formulario-turnos form input {
             width: 100%;
@@ -346,7 +203,6 @@ label {
             border-bottom: 1px solid #ffa9c9;
             color: white;
         }
-        /* edicion del boton */
         .formulario-turnos form button {
             background: #ffa9c9;
             border: 0;
@@ -354,48 +210,206 @@ label {
             color: black;
             padding: 1em;
         }
-        .formulario-turnos form button:hover {
-            background: #e84393;
-            color: white;
-            transition: background-color 0.4s ease-out;
-        }
         /* seccion quien soy */
         .quien-soy {
             background: rgba(255, 255, 255, 0.5);
             color: black;
-            width: 80vw;
-            margin: auto;
-            height: 80vh;
+            margin: 10px;
+            height: 100%;
             border-radius: 1%;
+        }
+        section h1 {
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
         .foto-txt {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
         }
         .foto {
-            align-items: center;
-            margin: 15px;
-            max-width: 30%;
-            border-radius: 20px;
+            max-width: 80vw;
         }
         .txt {
             padding: 20px;
             font-size: 20px;
         }
-        /* servicios */
+        /* seccion servicios */
         .servicios {
-            margin: auto;
-            width: 80vw;
-            text-align: center;
-        }
-        .img {
-            width: 40%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 20px;
+            justify-content: center;
+            align-items: center;
         }
         .descripcion {
-            margin: auto;
-            padding: 20px;
-            font-size: 17px;
+            min-width: 300px;
+        }
+        .dermaplaning img {
+            max-width: 50vw;
+            margin: 20px;
+        }
+        .microdermo img {
+            max-width: 50vw;
+            margin: 20px;
+        }
+        .microdermo h1 {
+            font-size: 30px;
+        }
+        .microdermo p {
+            margin: 10px;
+        }
+        /* seccion contacto */
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact img {
+            width: 70%;
+            margin: 20px;
+            padding: 10px;
+        }
+        .contact i {
+            margin: 10px;
+        }
+        /* PARA ESCRITORIO */
+        @media (min-width: 1025px) {
+            header {
+                display: flex;
+                align-items: center;
+            }
+            .btn-menu {
+                display: none;
+                width: 30px;
+                height: 3px;
+                padding: 10px;
+            }
+            .btn-menu:hover {
+                cursor: pointer;
+            }
+            .menu {
+                align-items: center;
+                background: transparent;
+                margin: 0;
+            }
+            .menu li {
+                border-top: none;
+                list-style: none;
+                font-size: 1.15rem;
+                display: flex;
+                align-items: center;
+                /* esto hace que se levante uno por uno */
+                width: auto;
+            }
+            .nav-items {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .item:hover {
+                background: none;
+                border-bottom: 5px solid #e84393;
+                transition: 0.3s;
+            }
+            .item {
+                display: block;
+                padding: 15px 20px;
+                color: white;
+            }
+            .logo-nav {
+                display: inline;
+                width: 3rem;
+                padding: 9px;
+                border-radius: 50%;
+            }
+            .titulo {
+                display: inline;
+                color: white;
+            }
+            .contact-wrapper>* {
+                padding: 1em;
+            }
+            .formulario-turnos form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            /* hace que el input de fecha y hora y el boton ocupen todo */
+            .formulario-turnos form .block {
+                grid-column: 1 / 3;
+            }
+            .formulario-turnos form p {
+                margin: 0;
+                padding: 1em;
+            }
+            /* edicion del boton y los inputs */
+            .formulario-turnos form button,
+            .formulario-turnos form input {
+                width: 100%;
+                padding: 0.7em;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #ffa9c9;
+                color: white;
+            }
+            /* edicion del boton */
+            .formulario-turnos form button {
+                background: #ffa9c9;
+                border: 0;
+                text-transform: uppercase;
+                color: black;
+                padding: 1em;
+            }
+            .formulario-turnos form button:hover {
+                background: #e84393;
+                color: white;
+                transition: background-color 0.4s ease-out;
+            }
+            /* seccion quien soy */
+            .quien-soy {
+                background: rgba(255, 255, 255, 0.5);
+                color: black;
+                width: 70vw;
+                margin: auto;
+                height: 80vh;
+                border-radius: 1%;
+            }
+            .foto-txt {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-self: center;
+            }
+            .foto {
+                display: block;
+                align-items: center;
+                margin: 15px;
+                max-width: 20rem;
+                border-radius: 20px;
+            }
+            .txt {
+                padding: 20px;
+                font-size: 20px;
+            }
+            /* servicios */
+            .servicios {
+                margin: auto;
+                width: 80vw;
+                text-align: center;
+            }
+            .img {
+                width: 40%;
+            }
+            .descripcion {
+                margin: auto;
+                padding: 20px;
+                font-size: 17px;
+            }
         }
     }
-}
