@@ -12,6 +12,12 @@ body {
 header {
     position: sticky;
     top: 0;
+    transition: 0.7s;
+}
+
+header.abajo {
+    background: #858585;
+    /* padding: 15px 20px; */
 }
 
 .conteiner {
@@ -105,7 +111,7 @@ header {
 .formulario-turnos form button:hover {
     background: #e84393;
     color: white;
-    transition: background-color .4s ease-out;
+    transition: background-color 0.4s ease-out;
 }
 
 label {
@@ -221,16 +227,14 @@ label {
     .servicios {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         padding: 10px;
         margin: 20px;
         justify-content: center;
         align-items: center;
     }
-    .flex-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .descripcion {
+        min-width: 300px;
     }
     .dermaplaning img {
         max-width: 50vw;
@@ -239,6 +243,9 @@ label {
     .microdermo img {
         max-width: 50vw;
         margin: 20px;
+    }
+    .microdermo h1 {
+        font-size: 30px;
     }
     .microdermo p {
         margin: 10px;
@@ -258,128 +265,137 @@ label {
     .contact i {
         margin: 10px;
     }
-}
-
-
-/* PARA ESCRITORIO */
-
-@media (min-width: 1025px) {
-    header {
-        display: flex;
-        align-items: center;
-    }
-    .btn-menu {
-        display: none;
-        width: 30px;
-        height: 3px;
-        padding: 10px;
-    }
-    .btn-menu:hover {
-        cursor: pointer;
-    }
-    .menu {
-        align-items: center;
-        background: transparent;
-        margin: 0;
-    }
-    .menu li {
-        border-top: none;
-        list-style: none;
-        font-size: 1.15rem;
-        display: flex;
-        align-items: center;
-        /* esto hace que se levante uno por uno */
-        width: auto;
-    }
-    .nav-items {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .item:hover {
-        border-bottom: 5px solid #e84393;
-        transition: 0.3s;
-    }
-    .item {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-    }
-    .logo-nav {
-        display: inline;
-        width: 4rem;
-        padding: 9px;
-        border-radius: 50%;
-    }
-    .titulo {
-        display: inline;
-        color: white;
-    }
-    .contact-wrapper>* {
-        padding: 1em;
-    }
-    .formulario-turnos form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    /* hace que el input de fecha y hora y el boton ocupen todo */
-    .formulario-turnos form .block {
-        grid-column: 1 / 3;
-    }
-    .formulario-turnos form p {
-        margin: 0;
-        padding: 1em;
-    }
-    /* edicion del boton y los inputs */
-    .formulario-turnos form button,
-    .formulario-turnos form input {
-        width: 100%;
-        padding: 0.7em;
-        border: none;
-        background: none;
-        border-bottom: 1px solid #ffa9c9;
-        color: white;
-    }
-    /* edicion del boton */
-    .formulario-turnos form button {
-        background: #ffa9c9;
-        border: 0;
-        text-transform: uppercase;
-        color: black;
-        padding: 1em;
-    }
-    .formulario-turnos form button:hover {
-        background: #e84393;
-        color: white;
-        transition: background-color .4s ease-out;
-    }
-    /* seccion quien soy */
-    .quien-soy {
-        background: rgba(255, 255, 255, 0.5);
-        color: black;
-        width: 80vw;
-        margin: auto;
-        height: 80vh;
-        border-radius: 1%;
-    }
-    section h1 {
-        margin: 0;
-    }
-    .foto-txt {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .foto {
-        align-items: center;
-        margin: 15px;
-        max-width: 41%;
-        border-radius: 20px;
-    }
-    .txt {
-        padding: 20px;
-        font-size: 20px;
+    /* PARA ESCRITORIO */
+    @media (min-width: 1025px) {
+        header {
+            display: flex;
+            align-items: center;
+        }
+        .btn-menu {
+            display: none;
+            width: 30px;
+            height: 3px;
+            padding: 10px;
+        }
+        .btn-menu:hover {
+            cursor: pointer;
+        }
+        .menu {
+            align-items: center;
+            background: transparent;
+            margin: 0;
+        }
+        .menu li {
+            border-top: none;
+            list-style: none;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            /* esto hace que se levante uno por uno */
+            width: auto;
+        }
+        .nav-items {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .item:hover {
+            background: none;
+            border-bottom: 5px solid #e84393;
+            transition: 0.3s;
+        }
+        .item {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+        }
+        .logo-nav {
+            display: inline;
+            width: 4rem;
+            padding: 9px;
+            border-radius: 50%;
+        }
+        .titulo {
+            display: inline;
+            color: white;
+        }
+        .contact-wrapper>* {
+            padding: 1em;
+        }
+        .formulario-turnos form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        /* hace que el input de fecha y hora y el boton ocupen todo */
+        .formulario-turnos form .block {
+            grid-column: 1 / 3;
+        }
+        .formulario-turnos form p {
+            margin: 0;
+            padding: 1em;
+        }
+        /* edicion del boton y los inputs */
+        .formulario-turnos form button,
+        .formulario-turnos form input {
+            width: 100%;
+            padding: 0.7em;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #ffa9c9;
+            color: white;
+        }
+        /* edicion del boton */
+        .formulario-turnos form button {
+            background: #ffa9c9;
+            border: 0;
+            text-transform: uppercase;
+            color: black;
+            padding: 1em;
+        }
+        .formulario-turnos form button:hover {
+            background: #e84393;
+            color: white;
+            transition: background-color 0.4s ease-out;
+        }
+        /* seccion quien soy */
+        .quien-soy {
+            background: rgba(255, 255, 255, 0.5);
+            color: black;
+            width: 80vw;
+            margin: auto;
+            height: 80vh;
+            border-radius: 1%;
+        }
+        .foto-txt {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .foto {
+            align-items: center;
+            margin: 15px;
+            max-width: 30%;
+            border-radius: 20px;
+        }
+        .txt {
+            padding: 20px;
+            font-size: 20px;
+        }
+        /* servicios */
+        .servicios {
+            margin: auto;
+            width: 80vw;
+            text-align: center;
+        }
+        .img {
+            width: 40%;
+        }
+        .descripcion {
+            margin: auto;
+            padding: 20px;
+            font-size: 17px;
+        }
     }
 }

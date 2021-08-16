@@ -35,7 +35,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="zona">
         <section>
             <div class="conteiner">
                 <p class="flex-p">Martinuchis Limpieza</p>
@@ -86,17 +86,26 @@
         <section class="servicios">
             <h1>Servicios</h1>
 
-            <article class="dermaplaning flex-column">
-                <img src="iconos/Dermaplaning.jpg" alt="">
-                <p>El Dermaplaning es un método de exfoliación físico que consiste en utilizar un bisturi para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. Este es uno
-                    de los tratamientos favoritos en la industria del entretenimiento, ¿Por qué? elimina todas las células muertas de la piel y también el vello facial, dejando la superficie muy suave, también permite una mayor penetración de los productos
-                    para la piel y crea un lienzo perfecto para que el maquillaje se deslice suavemente.</p>
+            <article class="dermaplaning flex column jus-cen al-cen">
+                <img src="iconos/Dermaplaning.jpg" class="img" alt="" />
+                <div>
+                    <h1>Dermaplaning</h1>
+                    <p class="descripcion">
+                        El Dermaplaning es un método de exfoliación físico que consiste en utilizar un bisturi para raspar suavemente la capa superior de la piel constituida por células muertas, con el fin de revelar una tez más brillante y suave. Este es uno de los tratamientos
+                        favoritos en la industria del entretenimiento, ¿Por qué? elimina todas las células muertas de la piel y también el vello facial, dejando la superficie muy suave, también permite una mayor penetración de los productos para la piel
+                        y crea un lienzo perfecto para que el maquillaje se deslice suavemente.
+                    </p>
+                </div>
             </article>
 
-
-            <article class="microdermo flex-column">
-                <img src="iconos/Microdermo.jpg" alt="">
-                <p>La microdermoabrasión es una técnica que se realiza para tener una piel más joven, suave y limpia. Con este procedimiento se consigue que la piel se renueve naturalmente ayudando a eliminar cicatrices y a disminuir arrugas.</p>
+            <article class="microdermo flex row jus-cen al-cen">
+                <img src="iconos/Microdermo.jpg" class="img" alt="" />
+                <div>
+                    <h1>Microdermoabrasión</h1>
+                    <p class="descripcion">
+                        La microdermoabrasión es una técnica que se realiza para tener una piel más joven, suave y limpia. Con este procedimiento se consigue que la piel se renueve naturalmente ayudando a eliminar cicatrices y a disminuir arrugas.
+                    </p>
+                </div>
             </article>
         </section>
 
@@ -104,16 +113,24 @@
             <h1>Contacto</h1>
             <div class="contact">
                 <p><i class="fas fa-map-marker-alt"></i>Mi consultorio</p>
-                <img src="iconos/ubicacion.png" alt="">
+                <img src="iconos/ubicacion.png" alt="" />
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <p class="contact">Contactame!</p>
-        <a href="https://www.instagram.com/_amartupiel/" class="iconos"><i class="fab fa-instagram redes"></i
-      ></a>
+        <a href="https://www.instagram.com/_amartupiel/" class="iconos"><i class="fab fa-instagram redes"></i></a>
         <a href="" class="iconos"><i class="fab fa-whatsapp redes"></i></a>
     </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", () => {
+            let header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        });
+    </script>
 </body>
+
 
 </html>
